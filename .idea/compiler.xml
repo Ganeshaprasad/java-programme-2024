@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="java-programme-2024" />
         <module name="Java-Programme-added-java-programme" />
       </profile>
     </annotationProcessing>
