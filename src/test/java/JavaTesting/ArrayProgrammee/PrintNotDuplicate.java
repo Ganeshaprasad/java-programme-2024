@@ -36,6 +36,7 @@ public class PrintNotDuplicate {
         // convert list to array
         int[] resultArray = uniqueElements.stream().mapToInt(i -> i).toArray();
 
+
         //iterate array
         System.out.print("{ ");
         for (int i = 0; i < resultArray.length; i++) {

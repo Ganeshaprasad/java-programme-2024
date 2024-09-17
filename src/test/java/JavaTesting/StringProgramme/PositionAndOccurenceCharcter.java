@@ -5,6 +5,7 @@ import java.util.*;
 public class PositionAndOccurenceCharcter {
     public static void main(String[] args) {
         String str = "I am samuel";
+        str=str.replace(" ","");
 
         // Create HashMaps to store occurrences and positions
         Map<Character, Integer> occurrences = new HashMap<>();

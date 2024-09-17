@@ -1,5 +1,8 @@
 package JavaTesting.StringProgramme;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class ReverseHalfOfString {
     public static void main(String[] args) {
         String str="Ganesha";
@@ -13,5 +16,10 @@ public class ReverseHalfOfString {
         }
         str2=str1+str.substring(str.length()/2);
         System.out.println(str2);
+
+
+
+
     }
+
 }

@@ -2,7 +2,7 @@ package JavaTesting.StringProgramme;
 
 public class PrintTheCharacterBasedOnNumber {
     public static void main(String[] args) {
-        String str = "a2b11c5";//output: aabbbbbbbbbbbccccc
+        String str = "a2b100c5";//output: aabbbbbbbbbbbccccc
         StringBuilder result = new StringBuilder();
         //get the character one by one
         for (int i = 0; i < str.length(); i++) {
