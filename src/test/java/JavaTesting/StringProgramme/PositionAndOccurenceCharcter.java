@@ -35,3 +35,32 @@ public class PositionAndOccurenceCharcter {
         }
     }
 }
+
+//------
+class HelloWorld {
+    public static void main(String[] args) {
+        String str = "ttrrc";  // Input string
+        List<Integer> ls;      // To track the indices of occurrences of a character
+        List<Character> lst = new ArrayList<>();  // To track already processed characters
+
+        // Loop through each character of the string
+        for (int i = 0; i < str.length(); i++) {
+            ls = new ArrayList<>();  // Reset ls for each character
+            int count = 0;
+
+            // Inner loop to compare the character with all others
+            for (int j = 0; j < str.length(); j++) {
+                if (str.charAt(i) == str.charAt(j)) {
+                    count++;
+                    ls.add(j);  // Add the index where the character matches
+                }
+            }
+
+            // Only print if the character hasn't already been processed
+            if (!lst.contains(str.charAt(i))) {
+                System.out.println(str.charAt(i) + " - " + count + " " + ls);
+                lst.add(str.charAt(i));  // Mark this character as processed
+            }
+        }
+    }
+}
